@@ -27,7 +27,6 @@ export default function App() {
       <Routes>
       <Route path="/" element={<Login />} />
       <Route path="/onboarding" element={<Onboarding />} />
-      <Route path="/dashboard" element={<Navigate to="/inbox" replace />} />
 
       {/* App shell — persistent sidebar + topbar */}
       <Route element={<AppShell />}>

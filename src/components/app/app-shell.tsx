@@ -237,7 +237,7 @@ export default function AppShell() {
       <div className="flex min-w-0 flex-1 flex-col">
         <header className="flex h-14 shrink-0 items-center gap-3 border-b bg-card/80 px-5 backdrop-blur">
           {/* compact brand for small screens */}
-          <Link to="/inbox" className="flex items-center gap-2 lg:hidden">
+          <Link to="/chat" className="flex items-center gap-2 lg:hidden">
             <Logo className="h-6 w-6" />
             <span className="font-display text-sm font-extrabold">Mateos</span>
           </Link>

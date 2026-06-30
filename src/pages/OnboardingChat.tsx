@@ -222,7 +222,7 @@ export default function OnboardingChat({
           </div>
 
           {ready ? (
-            <Button size="sm" onClick={() => navigate("/inbox")}>
+            <Button size="sm" onClick={() => navigate("/chat")}>
               Ready to start
               <ArrowRight className="h-4 w-4" />
             </Button>
@@ -301,7 +301,7 @@ export default function OnboardingChat({
       {showSkip && (
         <SkipDialog
           onClose={() => setShowSkip(false)}
-          onSkip={() => navigate("/inbox")}
+          onSkip={() => navigate("/chat")}
         />
       )}
     </main>

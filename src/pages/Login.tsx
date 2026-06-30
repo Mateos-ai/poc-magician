@@ -35,7 +35,7 @@ export default function Login() {
 
   // Demo only — no real auth. Sign-up walks into onboarding; sign-in goes
   // straight to the app.
-  const destination = mode === "signup" ? "/onboarding" : "/inbox";
+  const destination = mode === "signup" ? "/onboarding" : "/chat";
 
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
