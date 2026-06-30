@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================================
+   Mateos.ai — Sales Magician theme (ported from the magician app)
+   Brand from the logo: amber #FF8C42 (primary) ·
+   indigo #5B53E8 (secondary) · teal #17BEBB (accent).
+   ============================================================ */
+
+@layer base {
+  :root {
+    /* fonts (loaded in index.html) */
+    --font-display: "Bricolage Grotesque";
+    --font-body: "Hanken Grotesk";
+    --font-mono: "JetBrains Mono";
+
+    /* surfaces & text */
+    --background: #ffffff;
+    --foreground: #14141e;
+    --card: #ffffff;
+    --card-foreground: #14141e;
+    --popover: #ffffff;
+    --popover-foreground: #14141e;
+
+    /* PRIMARY = amber. on-primary is near-black for contrast. */
+    --primary: #ff8c42;
+    --primary-foreground: #14141e;
+
+    /* SECONDARY = indigo */
+    --secondary: #5b53e8;
+    --secondary-foreground: #ffffff;
+
+    /* ACCENT = teal */
+    --accent: #17bebb;
+    --accent-foreground: #14141e;
+
+    /* muted / neutrals */
+    --muted: #eeeef4;
+    --muted-foreground: #55556b;
+
+    /* status */
+    --destructive: #e5484d;
+    --destructive-foreground: #ffffff;
+    --success: #15b371;
+    --warning: #f5a524;
+
+    /* lines & focus */
+    --border: #e0e0ea;
+    --input: #e0e0ea;
+    --ring: #ffa56c; /* amber-400 */
+
+    --radius: 0.875rem; /* 14px */
+  }
+
+  .dark {
+    --background: #14141e;
+    --foreground: #f7f7fb;
+    --card: #1c1c2a;
+    --card-foreground: #f7f7fb;
+    --popover: #1c1c2a;
+    --popover-foreground: #f7f7fb;
+
+    --primary: #ff8c42;
+    --primary-foreground: #14141e;
+
+    --secondary: #7f79ed;
+    --secondary-foreground: #14141e;
+
+    --accent: #4accca;
+    --accent-foreground: #14141e;
+
+    --muted: #262635;
+    --muted-foreground: #a0a0b4;
+
+    --destructive: #e5484d;
+    --destructive-foreground: #ffffff;
+    --success: #15b371;
+    --warning: #f5a524;
+
+    --border: #3c3c4f;
+    --input: #3c3c4f;
+    --ring: #dd7a3c;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
