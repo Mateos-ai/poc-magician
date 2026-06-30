@@ -28,10 +28,10 @@ export default function ComingSoon({
       <Button
         variant="outline"
         className="mt-6"
-        onClick={() => navigate("/dashboard")}
+        onClick={() => navigate("/inbox")}
       >
         <ArrowLeft className="h-4 w-4" />
-        Back to Home
+        Back to Take Action
       </Button>
     </div>
   );

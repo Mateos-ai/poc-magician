@@ -1,50 +1,43 @@
 import { Navigate, Route, Routes } from "react-router-dom";
-import {
-  BarChart3,
-  Building2,
-  FolderKanban,
-  Plug,
-  Settings,
-  Target,
-  TrendingUp,
-  Trophy,
-  Users,
-  Workflow,
-} from "lucide-react";
+import { Target, TrendingUp, Trophy } from "lucide-react";
 
 import AppShell from "@/components/app/app-shell";
 import Login from "@/pages/Login";
 import Onboarding from "@/pages/Onboarding";
-import Dashboard from "@/pages/Dashboard";
 import Chat from "@/pages/Chat";
 import Inbox from "@/pages/Inbox";
+import InProgress from "@/pages/InProgress";
+import Projects from "@/pages/Projects";
+import ProjectDetail from "@/pages/ProjectDetail";
 import PrepareDay from "@/pages/PrepareDay";
+import Insights from "@/pages/Insights";
+import Assumptions from "@/pages/Assumptions";
+import IdealCustomers from "@/pages/IdealCustomers";
+import Company from "@/pages/Company";
+import Clients from "@/pages/Clients";
+import Settings from "@/pages/Settings";
+import Workflows from "@/pages/Workflows";
+import Integrations from "@/pages/Integrations";
 import ComingSoon from "@/pages/ComingSoon";
+import { InsightsProvider } from "@/lib/insights-store";
 
 export default function App() {
   return (
-    <Routes>
+    <InsightsProvider>
+      <Routes>
       <Route path="/" element={<Login />} />
       <Route path="/onboarding" element={<Onboarding />} />
+      <Route path="/dashboard" element={<Navigate to="/inbox" replace />} />
 
       {/* App shell — persistent sidebar + topbar */}
       <Route element={<AppShell />}>
-        <Route path="/dashboard" element={<Dashboard />} />
-
         {/* Workspace */}
         <Route path="/inbox" element={<Inbox />} />
+        <Route path="/in-progress" element={<InProgress />} />
         <Route path="/chat" element={<Chat />} />
         <Route path="/prepare-day" element={<PrepareDay />} />
-        <Route
-          path="/projects"
-          element={
-            <ComingSoon
-              icon={FolderKanban}
-              title="Projects"
-              description="Ongoing pieces of work Mateos runs for you — each superpower run, organised and trackable in one place."
-            />
-          }
-        />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/projects/:id" element={<ProjectDetail />} />
 
         {/* Superpowers */}
         <Route
@@ -79,71 +72,20 @@ export default function App() {
         />
 
         {/* Learning */}
-        <Route
-          path="/insights"
-          element={
-            <ComingSoon
-              icon={BarChart3}
-              title="Insights"
-              description="What's working across your funnel — response rates, best-fit segments, and what Mateos is learning about your sales motion."
-            />
-          }
-        />
-        <Route
-          path="/company"
-          element={
-            <ComingSoon
-              icon={Building2}
-              title="Our Company"
-              description="Your company profile and ICP — the context Mateos uses. Finish anything you skipped during onboarding, anytime."
-            />
-          }
-        />
-        <Route
-          path="/clients"
-          element={
-            <ComingSoon
-              icon={Users}
-              title="Our Clients"
-              description="Your customers and closed-won deals — the lookalike pattern Mateos learns from to find more of your best leads."
-            />
-          }
-        />
+        <Route path="/insights" element={<Insights />} />
+        <Route path="/assumptions" element={<Assumptions />} />
+        <Route path="/ideal-customers" element={<IdealCustomers />} />
+        <Route path="/company" element={<Company />} />
+        <Route path="/clients" element={<Clients />} />
 
         {/* Configuration */}
-        <Route
-          path="/settings"
-          element={
-            <ComingSoon
-              icon={Settings}
-              title="Settings"
-              description="Workspace, team and preferences. Demo only — nothing here is wired up yet."
-            />
-          }
-        />
-        <Route
-          path="/workflows"
-          element={
-            <ComingSoon
-              icon={Workflow}
-              title="Workflows"
-              description="Save the multi-step plays Mateos runs for you — lead-gen, day prep, event prep — so they run on a schedule or a trigger, hands-off."
-            />
-          }
-        />
-        <Route
-          path="/integrations"
-          element={
-            <ComingSoon
-              icon={Plug}
-              title="Integrations"
-              description="Connect Gmail, Calendar, Monday and Apollo so Mateos can read your context and draft on your surfaces."
-            />
-          }
-        />
+        <Route path="/settings" element={<Settings />} />
+        <Route path="/workflows" element={<Workflows />} />
+        <Route path="/integrations" element={<Integrations />} />
       </Route>
 
       <Route path="*" element={<Navigate to="/" replace />} />
-    </Routes>
+      </Routes>
+    </InsightsProvider>
   );
 }

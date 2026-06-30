@@ -23,6 +23,18 @@ export async function streamMateos(
   onText: (chunk: string) => void,
   signal?: AbortSignal
 ): Promise<void> {
+  // Static deploys (e.g. GitHub Pages) have no /api/chat backend. Reply with a
+  // friendly note instead of erroring; the live chat works with `npm run dev`.
+  if (import.meta.env.PROD) {
+    const note =
+      "I'm only live in the local demo — run the app with `npm run dev` to chat with me for real. Everything else here is clickable, so feel free to explore!";
+    for (const word of note.split(" ")) {
+      onText(word + " ");
+      await new Promise((r) => setTimeout(r, 28));
+    }
+    return;
+  }
+
   const res = await fetch("/api/chat", {
     method: "POST",
     headers: { "Content-Type": "application/json" },

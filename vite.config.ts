@@ -8,11 +8,14 @@ import Anthropic from "@anthropic-ai/sdk";
  * talks to Claude with the key from .env. The key never reaches the bundle.
  * Replies stream back as simple SSE lines: {"text": "..."} then {"done": true}.
  */
-export default defineConfig(({ mode }) => {
+export default defineConfig(({ command, mode }) => {
   const env = loadEnv(mode, process.cwd(), "");
   const apiKey = env.ANTHROPIC_API_KEY;
 
   return {
+    // Relative base so the built site works under any sub-path (GitHub Pages
+    // project URL like /poc-maigician/). Dev stays at root.
+    base: command === "build" ? "./" : "/",
     plugins: [
       react(),
       {
