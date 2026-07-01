@@ -53,7 +53,7 @@ export default function Assumptions() {
           </h1>
           <p className="mt-1 text-sm text-muted-foreground">
             What Mateos believes about your business and how it sells. Confirmed
-            insights land here — correct anything that's off.
+            insights land here - correct anything that's off.
           </p>
         </div>
         <Button onClick={() => setOpen(true)}>
@@ -149,7 +149,7 @@ function AddAssumptionModal({
         <p className="mt-1 text-sm text-muted-foreground">
           {mode === "choice"
             ? "Tell Mateos something it should remember about your business."
-            : "Write it yourself — Mateos will apply it everywhere."}
+            : "Write it yourself - Mateos will apply it everywhere."}
         </p>
 
         {mode === "choice" ? (

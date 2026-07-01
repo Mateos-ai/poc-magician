@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils";
 
 /**
- * Mateos.ai mark — three circles in a 2x2 grid (top-left omitted),
+ * Mateos.ai mark - three circles in a 2x2 grid (top-left omitted),
  * one per brand color: amber, teal, indigo.
  */
 export function Logo({ className }: { className?: string }) {

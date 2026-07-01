@@ -102,7 +102,7 @@ export default function Inbox() {
           Take action
         </h1>
         <p className="mt-1 text-sm text-muted-foreground">
-          The things that need you right now — review, send, or prep with Mateos.
+          The things that need you right now - review, send, or prep with Mateos.
         </p>
       </header>
 

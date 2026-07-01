@@ -134,7 +134,7 @@ export default function Onboarding() {
               Create your workspace
             </h1>
             <p className="mt-1.5 text-sm text-muted-foreground">
-              This is where your team, leads and conversations live — usually
+              This is where your team, leads and conversations live - usually
               your company or team name.
             </p>
 

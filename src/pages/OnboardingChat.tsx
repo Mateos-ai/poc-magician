@@ -17,7 +17,7 @@ import { cn } from "@/lib/utils";
 
 /* ────────────────────────────────────────────────────────────
    Demo-only scripted onboarding chat. Nothing is fetched or
-   stored — Mateos "thinks" with timeouts and canned cards.
+   stored - Mateos "thinks" with timeouts and canned cards.
    ──────────────────────────────────────────────────────────── */
 
 type Question = {
@@ -34,7 +34,7 @@ const READY_AT = 4;
 const QUESTIONS: Question[] = [
   {
     key: "company",
-    prompt: "First — what's your company called?",
+    prompt: "First - what's your company called?",
     placeholder: "Company name",
     suggestions: ["Acme Inc."],
   },
@@ -49,7 +49,7 @@ const QUESTIONS: Question[] = [
   {
     key: "sellTo",
     prompt:
-      "Who do you sell to? Your best-fit customers — think industry, company size and the roles you usually talk to.",
+      "Who do you sell to? Your best-fit customers - think industry, company size and the roles you usually talk to.",
     placeholder: "e.g. HR & talent leaders at 50–500-person firms",
     suggestions: [
       "HR & talent leaders at 50–500-person firms",
@@ -65,7 +65,7 @@ const QUESTIONS: Question[] = [
   {
     key: "whatSell",
     prompt:
-      "Last one for now — what do you sell? A sentence on your main offer is plenty. (Optional — you can hit Ready to start anytime.)",
+      "Last one for now - what do you sell? A sentence on your main offer is plenty. (Optional - you can hit Ready to start anytime.)",
     placeholder: "e.g. Executive search & recruiting",
     suggestions: ["Executive search & recruiting", "A B2B SaaS platform"],
   },
@@ -119,14 +119,14 @@ export default function OnboardingChat({
     setAwaiting(true);
   };
 
-  // Intro — runs once.
+  // Intro - runs once.
   useEffect(() => {
     if (startedRef.current) return;
     startedRef.current = true;
     (async () => {
       await say(`Hi ${name} 👋  I'm Mateos.`, 500);
       await say(
-        `To set up ${workspace}, I'll ask a few quick questions about your business. It shapes the leads I find and the outreach I draft — and you can skip whenever you like.`,
+        `To set up ${workspace}, I'll ask a few quick questions about your business. It shapes the leads I find and the outreach I draft - and you can skip whenever you like.`,
         1100
       );
       await ask(0);
@@ -160,7 +160,7 @@ export default function OnboardingChat({
       await wait(1300);
       setMessages((m) => [...m, { id: nextId(), role: "mateos", card: "lookup" }]);
       await say(
-        "Here's what I pulled together from your site — I'll keep sharpening it as we talk.",
+        "Here's what I pulled together from your site - I'll keep sharpening it as we talk.",
         500
       );
     }
@@ -170,7 +170,7 @@ export default function OnboardingChat({
       readyRef.current = true;
       setReady(true);
       await say(
-        "That's enough for me to get going — here's the first ICP I'd target. Press “Ready to start” whenever you like, or keep going to sharpen it.",
+        "That's enough for me to get going - here's the first ICP I'd target. Press “Ready to start” whenever you like, or keep going to sharpen it.",
         900
       );
       setMessages((m) => [...m, { id: nextId(), role: "mateos", card: "icp" }]);
@@ -181,7 +181,7 @@ export default function OnboardingChat({
       await ask(next);
     } else {
       await say(
-        "Perfect — your profile's looking solid. Whenever you're ready, let's get to work.",
+        "Perfect - your profile's looking solid. Whenever you're ready, let's get to work.",
         800
       );
       if (!readyRef.current) {
@@ -382,8 +382,8 @@ function LookupCard({ answers }: { answers: Record<string, string> }) {
   const facts = [
     { icon: Building2, label: "Industry", value: "Professional services" },
     { icon: Users, label: "Employees", value: "11–50" },
-    { icon: MapPin, label: "Headquarters", value: "—" },
-    { icon: Globe, label: "Founded", value: "—" },
+    { icon: MapPin, label: "Headquarters", value: "-" },
+    { icon: Globe, label: "Founded", value: "-" },
   ];
 
   return (
@@ -420,7 +420,7 @@ function LookupCard({ answers }: { answers: Record<string, string> }) {
       </div>
 
       <p className="mt-3 border-t pt-2.5 text-[11px] text-muted-foreground">
-        Pulled from your website — you can confirm or edit any of this later.
+        Pulled from your website - you can confirm or edit any of this later.
       </p>
     </div>
   );
@@ -489,7 +489,7 @@ function SkipDialog({
           Skip setup for now?
         </h3>
         <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">
-          Mateos works best when it knows your business — it's how it finds the
+          Mateos works best when it knows your business - it's how it finds the
           right leads and drafts outreach that sounds like you. You can start
           now and finish your profile from Settings anytime.
         </p>
