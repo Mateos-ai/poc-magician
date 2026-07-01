@@ -138,7 +138,7 @@ function MembersPanel() {
         <div>
           <h2 className="font-display text-sm font-bold">Members</h2>
           <p className="text-xs text-muted-foreground">
-            You're an admin — you can invite and manage the team.
+            You're an admin - you can invite and manage the team.
           </p>
         </div>
         <Button size="sm">

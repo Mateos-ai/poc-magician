@@ -28,7 +28,7 @@ export default function App() {
       <Route path="/" element={<Login />} />
       <Route path="/onboarding" element={<Onboarding />} />
 
-      {/* App shell — persistent sidebar + topbar */}
+      {/* App shell - persistent sidebar + topbar */}
       <Route element={<AppShell />}>
         {/* Workspace */}
         <Route path="/inbox" element={<Inbox />} />
@@ -45,7 +45,7 @@ export default function App() {
             <ComingSoon
               icon={Target}
               title="Top Your Funnel"
-              description="The hero superpower (Lead Gen) — ICP → discover → enrich → score → draft, as a reviewable lead list with a 'why' on every lead."
+              description="The hero superpower (Lead Gen) - ICP → discover → enrich → score → draft, as a reviewable lead list with a 'why' on every lead."
             />
           }
         />
@@ -55,7 +55,7 @@ export default function App() {
             <ComingSoon
               icon={TrendingUp}
               title="Find Opportunities"
-              description="Upsell & expansion — Mateos scans your existing customers for the next best move and drafts the outreach."
+              description="Upsell & expansion - Mateos scans your existing customers for the next best move and drafts the outreach."
             />
           }
         />
@@ -65,7 +65,7 @@ export default function App() {
             <ComingSoon
               icon={Trophy}
               title="Win The Event"
-              description="Conference prep — who to meet, why they matter, and a tailored opener for each, before you walk in the room."
+              description="Conference prep - who to meet, why they matter, and a tailored opener for each, before you walk in the room."
             />
           }
         />

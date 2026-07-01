@@ -1,6 +1,6 @@
 /**
  * Tiny localStorage-backed profile so the workspace + name carry from
- * onboarding into the app shell. Demo only — no real persistence layer.
+ * onboarding into the app shell. Demo only - no real persistence layer.
  */
 export type DemoProfile = { name: string; workspace: string };
 
@@ -11,7 +11,7 @@ export function saveProfile(p: DemoProfile) {
   try {
     localStorage.setItem(KEY, JSON.stringify(p));
   } catch {
-    /* ignore — demo only */
+    /* ignore - demo only */
   }
 }
 
@@ -20,7 +20,7 @@ export function getProfile(): DemoProfile {
     const raw = localStorage.getItem(KEY);
     if (raw) return { ...FALLBACK, ...JSON.parse(raw) };
   } catch {
-    /* ignore — demo only */
+    /* ignore - demo only */
   }
   return FALLBACK;
 }

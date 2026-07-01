@@ -51,7 +51,7 @@ type Integration = {
 
 const INTEGRATIONS: Integration[] = [
   // CRM
-  { id: "hubspot", name: "HubSpot", desc: "CRM — deals, contacts and companies.", category: "CRM", node: <HubSpotLogo className="h-7 w-7" /> },
+  { id: "hubspot", name: "HubSpot", desc: "CRM - deals, contacts and companies.", category: "CRM", node: <HubSpotLogo className="h-7 w-7" /> },
   { id: "salesforce", name: "Salesforce", desc: "Enterprise CRM.", category: "CRM", node: <SalesforceLogo className="h-7 w-7" /> },
   { id: "pipedrive", name: "Pipedrive", desc: "Pipeline-first CRM for SMBs.", category: "CRM", node: <PipedriveLogo className="h-7 w-7" /> },
   { id: "attio", name: "Attio", desc: "Flexible, modern CRM.", category: "CRM", node: <AttioLogo className="h-7 w-7" /> },

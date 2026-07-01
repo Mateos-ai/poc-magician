@@ -71,7 +71,7 @@ export default function Company() {
       </header>
 
       <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-        The context Mateos uses for everything — who you are, what you sell, and
+        The context Mateos uses for everything - who you are, what you sell, and
         how you talk about it. Keep it current and every draft gets sharper.
       </p>
 
@@ -93,7 +93,7 @@ export default function Company() {
         />
         <EditableSection
           title="What we sell"
-          initial="A done-with-you executive search service — sourcing, screening and shortlists for senior and leadership hires, billed per placement with an optional retainer."
+          initial="A done-with-you executive search service - sourcing, screening and shortlists for senior and leadership hires, billed per placement with an optional retainer."
         />
         <EditableSection
           title="How we talk"

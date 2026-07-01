@@ -55,7 +55,7 @@ const AGENDA: AgendaItem[] = [
     context:
       "A 1:30 PM intro call with a VP of People at Meridian Talent the user hasn't met before. Goal: a strong first meeting.",
     opener:
-      "Your 1:30 with Meridian Talent — a VP of People you haven't met yet. I can pull a prep brief on them, or draft a few discovery questions. Where do you want to start?",
+      "Your 1:30 with Meridian Talent - a VP of People you haven't met yet. I can pull a prep brief on them, or draft a few discovery questions. Where do you want to start?",
     chips: ["Build a prep brief", "Draft discovery questions", "Who am I meeting?"],
   },
   {
@@ -67,8 +67,8 @@ const AGENDA: AgendaItem[] = [
     context:
       "Dana at Harlow & Co. asked the user to send over the proposal. A reply is already drafted and waiting to be sent.",
     opener:
-      "Dana asked you to send over the proposal — I've got a reply drafted. Want to review it, soften the ask, or send it as-is?",
-    chips: ["Show me the draft", "Make it warmer", "Looks good — send it"],
+      "Dana asked you to send over the proposal - I've got a reply drafted. Want to review it, soften the ask, or send it as-is?",
+    chips: ["Show me the draft", "Make it warmer", "Looks good - send it"],
   },
   {
     id: "northwind",
@@ -80,7 +80,7 @@ const AGENDA: AgendaItem[] = [
     context:
       "The Northwind deal ($24k) has had no reply in 6 days and is at risk of going cold.",
     opener:
-      "Northwind's been quiet for 6 days now, with $24k on the line. A light, low-pressure nudge tends to work here — want me to draft one?",
+      "Northwind's been quiet for 6 days now, with $24k on the line. A light, low-pressure nudge tends to work here - want me to draft one?",
     chips: ["Draft a nudge", "Why might it have stalled?", "Draft a break-up email"],
   },
   {

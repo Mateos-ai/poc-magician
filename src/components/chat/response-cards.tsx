@@ -23,7 +23,7 @@ export type CardKind = "day" | "leads" | "opportunities" | "strategy";
 /** Short canned intro Mateos "says" above each card. */
 export const CARD_INTRO: Record<CardKind, (firstName: string) => string> = {
   day: (n) =>
-    `Here's your day, ${n}. A few things need you first — I've drafted what I can.`,
+    `Here's your day, ${n}. A few things need you first - I've drafted what I can.`,
   leads: () =>
     `Found 12 companies that look like your best customers. Here are the four strongest:`,
   opportunities: () =>
@@ -288,9 +288,9 @@ const METRICS = [
 ];
 
 const MOVES = [
-  "Double down on recruiting firms — they close 2× faster than your average.",
+  "Double down on recruiting firms - they close 2× faster than your average.",
   "Re-engage 7 deals stalled past 30 days; I've drafted nudges for each.",
-  "Shift outreach earlier in the week — your reply rate is highest on Tuesdays.",
+  "Shift outreach earlier in the week - your reply rate is highest on Tuesdays.",
 ];
 
 function StrategyCard() {

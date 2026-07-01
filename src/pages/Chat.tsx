@@ -60,7 +60,7 @@ const RECENT: { id: string; title: string; time: string; messages: [string, stri
       ["user", "Yes, draft one for Harlow & Co."],
       [
         "assistant",
-        "Drafted — short, references their recent Series A and your work with similar firms. It's in your Take Action queue to review and send. Want the other two teed up as well?",
+        "Drafted - short, references their recent Series A and your work with similar firms. It's in your Take Action queue to review and send. Want the other two teed up as well?",
       ],
       ["user", "Just those two for now, thanks."],
       ["assistant", "Done. I'll hold the rest and flag any that start heating up."],
@@ -74,12 +74,12 @@ const RECENT: { id: string; title: string; time: string; messages: [string, stri
       ["user", "Northwind has gone quiet. What should I do?"],
       [
         "assistant",
-        "It's been 6 days since your pricing email. Deals at this stage usually need a light nudge, not pressure — I'd offer to answer questions before their team meets. Want me to draft it?",
+        "It's been 6 days since your pricing email. Deals at this stage usually need a light nudge, not pressure - I'd offer to answer questions before their team meets. Want me to draft it?",
       ],
       ["user", "Draft it, keep it casual."],
       [
         "assistant",
-        "Here's a casual nudge — no hard ask, just keeping the door open. Drafted and waiting for your send. If they're still quiet in 4 days, a short break-up email tends to get a reply. Want me to queue one?",
+        "Here's a casual nudge - no hard ask, just keeping the door open. Drafted and waiting for your send. If they're still quiet in 4 days, a short break-up email tends to get a reply. Want me to queue one?",
       ],
       ["user", "Sure, queue it."],
       ["assistant", "Queued. I'll surface it in 4 days if there's no response."],
@@ -106,13 +106,13 @@ const RECENT: { id: string; title: string; time: string; messages: [string, stri
   },
   {
     id: "c4",
-    title: "Q3 — where to focus",
+    title: "Q3 - where to focus",
     time: "Mon",
     messages: [
       ["user", "Where should I focus this quarter?"],
       [
         "assistant",
-        "Your numbers are clear: recruiting firms close ~2× faster than your average and at a higher win rate. You also have 7 deals stalled past 30 days — clearing those is the quickest win. Want me to draft nudges for the stalled ones?",
+        "Your numbers are clear: recruiting firms close ~2× faster than your average and at a higher win rate. You also have 7 deals stalled past 30 days - clearing those is the quickest win. Want me to draft nudges for the stalled ones?",
       ],
       ["user", "How much is stuck in those 7?"],
       [
@@ -120,7 +120,7 @@ const RECENT: { id: string; title: string; time: string; messages: [string, stri
         "$96k across the seven, with Northwind ($24k) the largest. Three look revivable this week. Want me to start with those three?",
       ],
       ["user", "Yes, start there."],
-      ["assistant", "On it — drafting nudges for the top three now. They'll land in Take Action shortly."],
+      ["assistant", "On it - drafting nudges for the top three now. They'll land in Take Action shortly."],
     ],
   },
   {
@@ -131,12 +131,12 @@ const RECENT: { id: string; title: string; time: string; messages: [string, stri
       ["user", "I want to start reaching out to fintech founders. Can you help?"],
       [
         "assistant",
-        "Fintech's a bit outside your usual recruiting ICP, so expect a lower hit rate — but founders hiring their first sales team are a fit. Want me to find a handful and draft a tailored opener?",
+        "Fintech's a bit outside your usual recruiting ICP, so expect a lower hit rate - but founders hiring their first sales team are a fit. Want me to find a handful and draft a tailored opener?",
       ],
       ["user", "Find 5 and draft one opener I can reuse."],
       [
         "assistant",
-        "Found 5 seed-stage fintechs hiring sales leaders. Here's a reusable opener that leads with your track record placing first sales hires — tweak the first line per founder and you're set. It's in Take Action.",
+        "Found 5 seed-stage fintechs hiring sales leaders. Here's a reusable opener that leads with your track record placing first sales hires - tweak the first line per founder and you're set. It's in Take Action.",
       ],
       ["user", "Great, that works."],
       ["assistant", "I'll keep an eye out for more as they start hiring."],

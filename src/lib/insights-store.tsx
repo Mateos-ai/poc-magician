@@ -50,10 +50,10 @@ const SEED_INSIGHTS: Insight[] = [
     source: "rejections",
     title: "You keep passing on sub-20-person companies",
     detail:
-      "7 of your last 9 rejected leads were under 20 employees — they churn fast and rarely close.",
+      "7 of your last 9 rejected leads were under 20 employees - they churn fast and rarely close.",
     assumption: {
       group: "Ideal Customer",
-      text: "Companies under 20 employees are too small — deprioritise them",
+      text: "Companies under 20 employees are too small - deprioritise them",
     },
   },
   {
@@ -64,7 +64,7 @@ const SEED_INSIGHTS: Insight[] = [
       "Referral leads get a reply from you within the hour and close ~3× more often than cold ones.",
     assumption: {
       group: "Channels",
-      text: "Prioritise warm intros & referrals — they close about 3× more often",
+      text: "Prioritise warm intros & referrals - they close about 3× more often",
     },
   },
   {
@@ -72,10 +72,10 @@ const SEED_INSIGHTS: Insight[] = [
     source: "research",
     title: "Fintech outreach is underperforming",
     detail:
-      "Your fintech experiment is at a 4% reply rate vs 18% for recruiting — likely outside your ICP.",
+      "Your fintech experiment is at a 4% reply rate vs 18% for recruiting - likely outside your ICP.",
     assumption: {
       group: "Ideal Customer",
-      text: "Fintech is outside the core ICP — deprioritise it",
+      text: "Fintech is outside the core ICP - deprioritise it",
     },
   },
 ];

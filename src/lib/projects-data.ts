@@ -24,13 +24,13 @@ export const PROJECTS: Project[] = [
     name: "Q3 Pipeline",
     description: "Deals, forecasts and where to focus this quarter.",
     summary:
-      "The deals that decide your quarter — the forecast, the stalled ones worth reviving, and where your time pays off most.",
+      "The deals that decide your quarter - the forecast, the stalled ones worth reviving, and where your time pays off most.",
     instructions:
       "Focus on deals closing this quarter. Prioritise recruiting firms and anything over $20k. Flag risks early and always propose a concrete next step.",
     updated: "Updated 2h ago",
     tone: "amber",
     conversations: [
-      { id: "q3-1", title: "Q3 — where to focus", updated: "2h ago", contextPct: 34 },
+      { id: "q3-1", title: "Q3 - where to focus", updated: "2h ago", contextPct: 34 },
       { id: "q3-2", title: "Stalled deals to revive", updated: "Yesterday", contextPct: 58 },
       { id: "q3-3", title: "Forecast for the board", updated: "Mon", contextPct: 81 },
       { id: "q3-4", title: "Which deals to push to Q4", updated: "Last week", contextPct: 12 },
@@ -41,7 +41,7 @@ export const PROJECTS: Project[] = [
     name: "Recruiting ICP",
     description: "Your best-fit customers and the patterns behind them.",
     summary:
-      "Everything about your best-fit customers — the closed-won pattern, the leads that match it, and how to keep the definition sharp.",
+      "Everything about your best-fit customers - the closed-won pattern, the leads that match it, and how to keep the definition sharp.",
     instructions:
       "Score every lead against our closed-won recruiting deals (50–200 staff, recently funded). Be explicit about why each lead fits or doesn't.",
     updated: "Updated yesterday",
@@ -57,7 +57,7 @@ export const PROJECTS: Project[] = [
     name: "SaaStr 2026",
     description: "Prep, target accounts and follow-ups for the event.",
     summary:
-      "Your game plan for SaaStr 2026 — who to meet, what to say, and the follow-ups that turn hallway chats into pipeline.",
+      "Your game plan for SaaStr 2026 - who to meet, what to say, and the follow-ups that turn hallway chats into pipeline.",
     instructions:
       "Prioritise attendees who match our ICP. Keep openers short and specific to each person. Draft same-day follow-ups.",
     updated: "Updated Mon",
@@ -73,7 +73,7 @@ export const PROJECTS: Project[] = [
     name: "Enterprise Expansion",
     description: "Upsell plays across the accounts you already own.",
     summary:
-      "Growth inside the accounts you already own — usage signals, renewal timing, and the upsell plays worth running.",
+      "Growth inside the accounts you already own - usage signals, renewal timing, and the upsell plays worth running.",
     instructions:
       "Only suggest expansion when there's a real usage or headcount signal. Keep outreach low-pressure and value-first.",
     updated: "Updated last week",
@@ -89,7 +89,7 @@ export const PROJECTS: Project[] = [
     name: "Outbound Experiments",
     description: "New segments and messaging tests in flight.",
     summary:
-      "A testing ground for new segments and messaging — what's working, what's not, and what to try next.",
+      "A testing ground for new segments and messaging - what's working, what's not, and what to try next.",
     instructions:
       "Treat these as experiments. Note the hypothesis behind each test and keep messaging concise.",
     updated: "Updated last week",
@@ -105,7 +105,7 @@ export const PROJECTS: Project[] = [
     name: "Renewals",
     description: "At-risk accounts and renewal timing to stay ahead of.",
     summary:
-      "Staying ahead of churn — at-risk accounts, renewal dates, and the nudges that keep deals warm.",
+      "Staying ahead of churn - at-risk accounts, renewal dates, and the nudges that keep deals warm.",
     instructions:
       "Surface renewals 60 days out. For quiet accounts, draft a light nudge first; escalate only if there's no reply.",
     updated: "Updated 3d ago",

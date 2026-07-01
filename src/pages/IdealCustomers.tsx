@@ -42,7 +42,7 @@ const INITIAL: ICP[] = [
   {
     id: "icp1",
     name: "Recruiting & Staffing Firms",
-    description: "Our bread and butter — agencies placing senior roles and hiring fast.",
+    description: "Our bread and butter - agencies placing senior roles and hiring fast.",
     industry: "Recruiting & staffing",
     size: "50–200 employees",
     locations: ["United Kingdom", "Ireland", "Netherlands"],
@@ -296,7 +296,7 @@ function Field({
           className="mt-1 w-full rounded-md border border-input bg-background px-2 py-1 text-sm focus-visible:border-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-100"
         />
       ) : (
-        <p className="mt-1 text-sm font-medium">{value || "—"}</p>
+        <p className="mt-1 text-sm font-medium">{value || "-"}</p>
       )}
     </div>
   );
@@ -347,7 +347,7 @@ function ChipField({
           </span>
         ))}
         {!editing && items.length === 0 && (
-          <span className="text-xs text-muted-foreground">—</span>
+          <span className="text-xs text-muted-foreground">-</span>
         )}
         {editing && (
           <input

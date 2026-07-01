@@ -15,12 +15,12 @@ const pillars = [
   {
     icon: Sparkles,
     title: "One agent spine",
-    body: "ChatGPT with your context and abilities — it reads your inbox, calendar and CRM and proposes the next move.",
+    body: "ChatGPT with your context and abilities - it reads your inbox, calendar and CRM and proposes the next move.",
   },
   {
     icon: Target,
     title: "Lead-Gen superpower",
-    body: "Find companies like your best customers, enriched, scored and drafted — ready for review.",
+    body: "Find companies like your best customers, enriched, scored and drafted - ready for review.",
   },
   {
     icon: ShieldCheck,
@@ -33,7 +33,7 @@ export default function Login() {
   const navigate = useNavigate();
   const [mode, setMode] = useState<Mode>("signin");
 
-  // Demo only — no real auth. Sign-up walks into onboarding; sign-in goes
+  // Demo only - no real auth. Sign-up walks into onboarding; sign-in goes
   // straight to the app.
   const destination = mode === "signup" ? "/onboarding" : "/chat";
 
@@ -63,7 +63,7 @@ export default function Login() {
             Last-mile AI for the way SMBs actually sell.
           </h1>
           <p className="mt-5 text-base leading-relaxed text-white/85">
-            Meet the Sales Magician — one agent that lives inside your inbox,
+            Meet the Sales Magician - one agent that lives inside your inbox,
             calendar and CRM, tops up your funnel and drafts the follow-ups, so
             small teams sell like big ones.
           </p>
@@ -107,7 +107,7 @@ export default function Login() {
           <p className="mt-1.5 text-sm text-muted-foreground">
             {mode === "signin"
               ? "Sign in to pick up where the Magician left off."
-              : "Start your 14-day design-partner trial — no card required."}
+              : "Start your 14-day design-partner trial - no card required."}
           </p>
 
           {/* mode toggle */}
